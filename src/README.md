@@ -35,6 +35,5 @@ Not all the files are present.
 ### public
 
 Find all the public access files (CSS, Javascript and ASSETS).
-Find [here](https://github.com/warodri/rob-haughian/tree/master/src/public/demo) 
-some DEMO applications in Vanilla Javascript, Angular, React and Android.
+Find [here some DEMO applications](https://github.com/warodri/rob-haughian/tree/master/src/public/demo) in Vanilla Javascript, Angular, React and Android.
 

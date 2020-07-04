@@ -6,7 +6,7 @@ You will find several folders with examples of what you can do.
 Please, notice that we tried to keep this code as simple as possible.
 We want you to start with this and apply the knowledge into your code.
 
-IMPORTANT: This code is not intended to use in a production environment.
+#### IMPORTANT: This code is not intended to use in a production environment.
 
 ### chat/javascript
 
