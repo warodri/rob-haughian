@@ -1,3 +1,18 @@
+// Copyright 2020 Vaskit.com. All Rights Reserved.
+//
+// This code is not for commercial use.
+//
+//     https://vaskit.com
+//
+// This code is distributed under Proprietary license. 
+// This work may not be modified or redistributed.
+//
+// Business software (or a business application) is any software or 
+// set of computer programs used by business users to perform various 
+// business functions. These business applications are used to 
+// increase productivity, to measure productivity and to perform 
+// other business functions accurately.
+
 const express = require('express');
 const router = express.Router();
 
@@ -39,20 +54,6 @@ router.put('/dashboard', checkAuth, checkPlan, checkFingerprint, Controller.dash
  * API - LIST UPLOADED FILES
  */
 router.get('/upload', checkAuth, checkPlan, checkKey, Controller.listUploadedFiles)
-// Copyright 2020 Vaskit.com. All Rights Reserved.
-//
-// This code is not for commercial use.
-//
-//     https://vaskit.com
-//
-// This code is distributed under Proprietary license. 
-// This work may not be modified or redistributed.
-//
-// Business software (or a business application) is any software or 
-// set of computer programs used by business users to perform various 
-// business functions. These business applications are used to 
-// increase productivity, to measure productivity and to perform 
-// other business functions accurately.
 
 /**
  * API - UPLOAD FILES TO BUCKET

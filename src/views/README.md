@@ -1,4 +1,4 @@
-# Place all templates here.
+# Templates
 
 ## PLEASE NOTE
 Right now you see one template only (the one for the landing page)

@@ -1,8 +1,4 @@
-const express = require('express');
-const router = express.Router();
-
-/**
- // Copyright 2020 Vaskit.com. All Rights Reserved.
+// Copyright 2020 Vaskit.com. All Rights Reserved.
 //
 // This code is not for commercial use.
 //
@@ -17,6 +13,10 @@ const router = express.Router();
 // increase productivity, to measure productivity and to perform 
 // other business functions accurately.
 
+const express = require('express');
+const router = express.Router();
+
+/**
 * Middlewares
  */
 const checkAuth = require('../middleware/check-auth');

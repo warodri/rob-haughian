@@ -1,16 +1,3 @@
-const express = require('express');
-const router = express.Router();
-
-/**
- * Middlewares
- */
-const checkAuth = require('../middleware/check-auth');
-const checkKey = require('../middleware/check-key');
-const checkPlan = require('../middleware/check-plan');
-
-/**
- * Business logic
- */
 // Copyright 2020 Vaskit.com. All Rights Reserved.
 //
 // This code is not for commercial use.
@@ -25,6 +12,20 @@ const checkPlan = require('../middleware/check-plan');
 // business functions. These business applications are used to 
 // increase productivity, to measure productivity and to perform 
 // other business functions accurately.
+
+const express = require('express');
+const router = express.Router();
+
+/**
+ * Middlewares
+ */
+const checkAuth = require('../middleware/check-auth');
+const checkKey = require('../middleware/check-key');
+const checkPlan = require('../middleware/check-plan');
+
+/**
+ * Business logic
+ */
 
 const Controller = require('../controllers/push');
 
