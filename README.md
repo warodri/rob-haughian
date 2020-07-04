@@ -10,4 +10,4 @@ most of the business code was removed.
 
 All the structure is there but many programming logic is missing.
 
-You can check [demos here](https://github.com/warodri/rob-haughian/tree/master/src/public/demo) for Javascript, Angular, React and Android. Their purpose is to show users how to use Vaskit Tools. If you want to see more advanced examples, please just let me know.
+You can check [demos here](https://github.com/warodri/rob-haughian/tree/master/src/public/demo) for **Javascript**, **Angular**, **React** and **Android**. Their purpose is to show users how to use Vaskit Tools. If you want to see more advanced examples, please just let me know.
