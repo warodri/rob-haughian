@@ -1,0 +1,60 @@
+<div class="container mt-4">
+
+    <!--
+        Intro card
+    -->
+    <app-intro></app-intro>
+
+    <!--
+        CRUD Card
+    -->
+    <div class="card border-0 shadow mt-4 mb-4">
+        
+        <div class="card-header">
+            <h5>List of Employees</h5>
+        </div>
+
+        <div class="card-body">
+
+            <p class="card-text">
+                For this demo we will run CRUD operations for a group of employees.
+            </p>
+
+            <!--
+                List records form
+            -->
+            <app-list 
+                [records]="arrRecords"
+                (deleteRecord)="userRemovedRecord()"
+                (editRecord)="userWantsToEditRecord($event)"></app-list>
+
+            <!--
+                Add new record form
+            -->
+            <app-add *ngIf="addRecord" 
+                [recordToEdit]="recordToEdit"
+                (cancelAdd)="cancelAdd()" 
+                (recordAdded)="recordAdded()"></app-add>
+
+        </div>
+
+        <!--
+            Add New button
+        -->
+        <div class="card-footer text-center">
+            <button class="btn btn-primary" (click)="showAddNew()">
+                Add New
+            </button>
+        </div>
+
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-body text-center">
+            Clone this code from <a href="">Github</a>
+        </div>
+    </div>
+
+    <div style="height:5rem"></div>
+
+</div>

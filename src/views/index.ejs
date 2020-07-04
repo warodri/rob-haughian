@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('common/main_gead', {}) %>
+
+<body>
+    <div id="layoutDefault">
+        <div id="layoutDefault_content">
+            <main>
+
+                <%- include('index/nav', {}) %>
+                <%- include('index/header', {}) %>
+
+                <section class="bg-white">
+
+                    <div class="container">
+                        <%- include('index/video-chat', {}) %>                        
+                        <%- include('index/insert-records', {}) %>                        
+                        <%- include('index/amazon', {}) %>                        
+                    </div>
+
+                    <%- include('index/pick-sample', {}) %>
+                    <%- include('index/developers', {}) %>
+                    
+                </section>
+
+                <section class="bg-light py-10">
+                    <%- include('index/more-vaskit', {}) %>
+                </section>
+                
+                <hr class="m-0" />
+
+                <section class="bg-light pt-10" id="select-plan">
+                    <%- include('index/pricing', {}) %>
+                </section>
+
+                <section class="bg-dark py-10">
+                    <%- include('index/common-answers', {}) %>
+                </section>
+
+                <section class="bg-white pt-10">
+                    <%- include('index/faq', {}) %>
+                </section>
+
+                <section class="bg-light py-10">
+                    <%- include('index/ready-to-start', {}) %>
+                </section>
+
+                <hr class="m-0" />
+
+            </main>
+        </div>
+
+        <%- include('index_footer', {
+            footer_class: 'bg-dark footer-dark'
+        }); %>
+
+    </div>
+
+    <div id="cookie-policy">
+        <%- include('common/cookie-policy', {}) %>
+    </div>
+
+    <%- include('common/javascript-includes', {}) %>
+    
+</body>
+</html>

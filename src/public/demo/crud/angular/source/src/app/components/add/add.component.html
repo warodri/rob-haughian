@@ -1,0 +1,45 @@
+<!--
+    Add new record
+-->
+<div class="mt-4 mb-4" align="center">
+    <table class="table table-borderless" style="max-width:400px">
+        
+        <tr id="recordId" *ngIf="recordToEdit">
+            <td>Record ID:</td>
+            <td><input type="text" id="id" disabled class="form-control" 
+                [value]="recordToEdit._id" /></td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name" class="form-control" 
+                [value]="recordToEdit ? recordToEdit.data.name : ''" /></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="number" id="age" class="form-control" 
+                [value]="recordToEdit ? recordToEdit.data.age : ''" /></td>
+        </tr>
+        <tr>
+            <td>Position:</td>
+            <td><input type="text" id="position" class="form-control" 
+                [value]="recordToEdit ? recordToEdit.data.position : ''" /></td>
+        </tr>
+    </table>
+    <table class="table table-borderless" style="max-width:400px">
+        <tr>
+            <td>
+                <div id="addNewInfo" class="text-info">
+                </div>
+            </td>
+            <td align="right" width="230">
+                <button class="btn btn-secondary mr-2" (click)="onCancelAdd()">
+                    Cancel
+                </button>
+                <button class="btn btn-primary" (click)="saveChanges()">
+                    Save
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+

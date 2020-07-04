@@ -1,0 +1,236 @@
+<div class="container">
+    <div class="text-center mb-5">
+        <h2>Simple Pricing. Monthly payment</h2>
+        <p class="lead">
+            Pay Monthly, cancel anytime. Our plans let you try our service, be professional and go
+            beyond,
+            by hiring a custom configuration for a large volume of information.
+        </p>
+    </div>
+    <div class="row z-1">
+        <div class="col-lg-4 mb-5 mb-lg-n10" data-aos="fade-up" data-aos-delay="100">
+            <div class="card pricing h-100">
+                <div class="card-body p-5">
+                    <div class="text-center">
+                        <div class="badge badge-light badge-pill badge-marketing badge-sm">
+                            Free
+                        </div>
+                        <div class="pricing-price"><sup>£</sup><%= PLAN_FREE_COST %><span
+                                class="pricing-price-period">/mo</span></div>
+                    </div>
+                    <ul class="fa-ul pricing-list">
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">1 user</span>
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">1 table</span>
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">Community support</span>
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">10,000 Requests
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">0.5 GB Database Storage
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">0.5 GB File Storage
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">1,000 Socket Messages
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">1,000 Push Messages
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-info" onclick="selectPlan('free')" id="butSelectPlanFree">
+                        SELECT
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-5 mb-lg-n10" data-aos="fade-up">
+            <div class="card pricing h-100">
+                <div class="card-body p-5">
+                    <div class="text-center">
+                        <div class="badge badge-primary-soft badge-pill badge-marketing badge-sm text-primary">
+                            Standard
+                        </div>
+                        <div class="pricing-price">
+                            <sup>£</sup><%= PLAN_STANDARD_COST %><span class="pricing-price-period">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="fa-ul pricing-list">
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">10,000 User</span>
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">100 Tables</span>
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">Community Support</span>
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">2M Requests
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">3 GB Database Storage
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">150 GB File Storage
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">1M Socket Messages
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">10,000 Push Messages
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">24/7 Technical Support
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-info" onclick="selectPlan('standard')" id="butSelectPlanStandard">
+                        SELECT
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-lg-n10" data-aos="fade-up" data-aos-delay="100">
+            <div class="card pricing h-100">
+                <div class="card-body p-5">
+                    <div class="text-center">
+                        <div class="badge badge-light badge-pill badge-marketing badge-sm">
+                            Enterprise
+                        </div>
+                        <div class="pricing-price">
+                            <sup>£</sup><%= PLAN_ENTERPRISE_COST %><span class="pricing-price-period">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="fa-ul pricing-list">
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">100,000 User</span>
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">500 Tables</span>
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">Community Support</span>
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">5M Requests
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">4 GB Database Storage
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">250 GB File Storage
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">Unlimited Socket Messages
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">Unlimited Push Messages
+                        </li>
+                        <li class="pricing-list-item">
+                            <span class="fa-li">
+                                <i class="far fa-check-circle text-teal"></i>
+                            </span>
+                            <span class="text-dark">24/7 Technical Support
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-footer text-center">
+                    <button class="btn btn-info" onclick="selectPlan('enterprise')" id="butSelectPlanEnterprise">
+                        SELECT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="svg-border-rounded text-dark">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor">
+        <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+    </svg>
+</div>
